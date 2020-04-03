@@ -226,3 +226,48 @@ codecs.getencoder('hex')(prev_block.encode())[0]  # 等价于python2中的prev_b
 > ------
 >
 > 
+
+
+
+### generally trans python2 to python3
+
+利用python内置工具2to3.py自动将python2的代码转换为python3的代码，该脚本python2和python3都有，位于python的安装根目录\Tools\Scripts\2to3.py。
+
+
+
+如转换python2.x的python脚本：  D:\tmp\hello.py，
+
+进入cmd，输入   python xx\Tools\Scripts\2to3.py -w D:\tmp\hello.pyhello.py
+
+==注意，该工具只能从语法层面上转换，若python3中原python2的部分方法失效，会报错，无法运行==
+
+> #### 在pycharm中配置从Python2.x到3.x的转换工具
+>
+> 原文链接：https://blog.csdn.net/Jeff_Chau0503/java/article/details/79234735
+>
+> 
+>
+> 第一步： File--Setting--Tools--External Tools.--点击如下图中绿色的加号。如果你是第一次添加外部工具，这里是空白的，没有下图的 External Tools 和 2to3
+>
+> ![第一步](doc/2to3_in_pycharm_1.png)
+>
+> 第二步：设置
+>
+> ![第二部](doc/2to3_in_pycharm_2.png)
+>
+> Programm：这里我设置为python所在的目录，
+>
+> Arguments：由于python自带2to3转换工具，这里不同于其他大佬的博文，需要填入工具所在的位置。注意！这里要加上 -w  ，意思为 Write back modified files. 即将原始2.x版本的代码重命名为 原始文件名+.bak的形式。后面的$FilePath$代表原始文件的绝对路径。
+>
+>
+> Working directory: $FileDir$代表原始文件所在目录的的绝对路径。
+>
+> 完成后点击OK。
+>
+> 
+>
+> 第三步：
+>
+> 右击你需要转换的.py文件，选择External Tools --- 2to3
+>
+> 大功告成！你会在目录栏看到一个新的原文件名.py.bak的文件。这个为你转换前的原始文件。
