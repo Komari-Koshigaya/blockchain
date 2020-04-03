@@ -10,7 +10,15 @@ python 3.7 or 2.7
 
 ### explain
 
-blockhash.py是用python3写的，blockhash_python2.py 则是python2
+blockhash.py是用python3写的，blockhash_python2.py 则是python2。由于在python3中prev_block.decode("hex")已失效，需要使用codesc库来代替
+
+~~~python
+import codecs    # 由于 'hello'.encode("hex") 只适用python2，故python3使用该库
+
+# prev_block.encode()  将字符串转为字节  b'adb'
+codecs.getdecoder('hex')(prev_block.encode())[0]  # 等价于python2中的prev_block.decode("hex")
+codecs.getencoder('hex')(prev_block.encode())[0]  # 等价于python2中的prev_block.encode("hex")
+~~~
 
 ### source
 
