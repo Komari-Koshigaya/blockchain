@@ -307,7 +307,8 @@ contract helloworld {
 测试结果
 
 <div align=center>
-    <img src='assets/2020042422071833.png' />
+    <img src='assets/2020042422071833.png' /></div>
+
 
 
 
