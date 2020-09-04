@@ -2,7 +2,7 @@
 
 > 参考链接： [以太坊开发入门，Remix IDE使用及简单的合约部署](https://blog.csdn.net/Lyon_Nee/article/details/91046159?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param)
 
-[![Build Status](F:\莫道荧光小 尤怀照夜心\blockchain\开发相关\智能合约\assets\awesome-go.svg)](https://travis-ci.org/avelino/awesome-go) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![Slack Widget](F:\莫道荧光小 尤怀照夜心\blockchain\开发相关\智能合约\assets\join-us on slack-gray.svg)](http://gophers.slack.com/messages/awesome) [![Netlify Status](https://api.netlify.com/api/v1/badges/83a6dcbe-0da6-433e-b586-f68109286bd5/deploy-status)](https://app.netlify.com/sites/awesome-go/deploys)
+[![Build Status](assets/awesome-go.svg)](https://travis-ci.org/avelino/awesome-go) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![Slack Widget](assets/join-us on slack-gray.svg)](http://gophers.slack.com/messages/awesome) [![Netlify Status](https://api.netlify.com/api/v1/badges/83a6dcbe-0da6-433e-b586-f68109286bd5/deploy-status)](https://app.netlify.com/sites/awesome-go/deploys)
 
 ## 准备：
 
@@ -308,6 +308,9 @@ contract helloworld {
 
 <div align=center>
     <img src='assets/2020042422071833.png' />
+
+
+
 #### 9.固定长度字节数组byte
 
 一个byte=8个位（XXXX XXXX）X为0或1，二进制表示
