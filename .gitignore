@@ -2,3 +2,9 @@
 *.o
 bin
 build
+
+
+# idea
+.idea
+__pycache__
+*.pyc
